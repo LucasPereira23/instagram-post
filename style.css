@@ -1,0 +1,350 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 20px 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f5efef;
+}
+
+.general-div{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-div{
+    height: auto;
+    width: 526px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    box-shadow: -1px 7px 8px -5px rgba(0, 0, 0 0.14);
+    background: #FCFCFC;   
+}
+
+.account-div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 15px 0 10px 25px;
+}
+
+.account-div img{
+    height: 50px;
+    width: 50px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.account-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.account-info span:nth-child(1){
+    margin-bottom: 9px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    cursor: pointer;
+}
+
+.account-info span:nth-child(2){
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.slider-div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-div div:nth-child(1){
+    position: absolute;
+    left: 15px;
+    cursor: pointer;
+}
+
+.slider-div div:nth-child(2){
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+.slider-div div:nth-child(4){
+    height: 325px;
+    width: 526px;
+}
+
+.left-arrow img{
+    border: 10px;
+}
+
+.right-arrow img{
+    border: 10px;
+}
+
+.pass-buttons{
+    position: absolute;
+    bottom: 18px;
+}
+
+.pass-buttons img{
+    cursor: pointer;
+}
+
+.icons-div{
+    padding: 18px 0 0 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icons-div div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+}
+
+
+.icons-div svg{
+    height: 20px;
+    width: 24px;
+    cursor: pointer;
+}
+
+
+.active{
+    animation: pulse 0.3s ;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1, 1);
+       }
+   
+       50% {
+        transform: scale(1.4, 1.4);
+       }
+   
+       100% {
+       transform: scale(1, 1);
+       }
+  }
+
+
+.icons-div div:nth-child(2) img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.icons-div div:nth-child(3) img{
+    height: 17px;
+    width: 20px;  
+    cursor: pointer;
+}
+
+.comments-div{
+    padding: 25px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-description{
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 22px;
+}
+
+.post-description span:nth-child(1){
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.post-description span:nth-child(2){
+    font-weight: 400;
+}
+
+.post-comment{
+    height: 160px;
+
+}
+
+.ul-post-comment{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 15px;
+    overflow: auto ;
+}
+
+.ul-post-comment span{
+    display: inline;
+    font-weight: 600;
+}
+
+.ul-post-comment li{
+    display: inline;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.post-input{
+    display: flex;
+    width: 100%;
+}
+
+.post-input input{
+    height: 55px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    padding-left: 15px;
+    padding-right: 0;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    background: #F1F1F1;
+    outline: 0;
+}
+
+.post-input span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 57px;
+    width: 60px;
+    border-radius: 0 5px 5px 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: right;
+    color: #3D8AFF;
+    background: #F1F1F1;
+    cursor: pointer;
+}
+
+.swiper {
+    width: auto;
+    height: 300px;
+    
+  }
+
+  .swiper-slide{
+    background-repeat: no-repeat;
+  }
+
+
+.swiper-slide img{
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+
+::-webkit-scrollbar{
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track{
+    background-color: transparent;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: #746d6d;
+    border-radius: 45px;
+  }
+
+.ul-post-comment::-webkit-scrollbar{
+    width: 7px;
+  }
+  
+.ul-post-comment::-webkit-scrollbar-track{
+    background-color: transparent;
+    
+  }
+  
+.ul-post-comment::-webkit-scrollbar-thumb{
+    background-color: transparent;
+  }
+
+/*  DARK MODE    */
+
+.container{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+}
+
+.container input{
+    visibility: hidden;
+}
+
+.container label{
+    user-select: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    background-image: url(./img/favpng_moon-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px ;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+
+}
+
+body.dark-mode{
+    background-color: #1C1C1C;;   
+}
+
+body.dark-mode .container label{
+    background-color: white;
+    background-image: url(./img/sun-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px ;
+}
+
+.content-div.dark-mode{
+    background-color: black;
+    border: 1px solid #373737;
+}
+
+.content-div.dark-mode .account-div{
+    color: white;
+}
+
+.content-div.dark-mode .comments-div{
+    color: white;
+}
+
+.post-input.dark-mode input{
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.post-input.dark-mode span{
+    background-color: #1C1C1C;
+}
